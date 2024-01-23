@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="button">~/latest</a>
+            <a href="/pages/root.html" class="button">/root</a>
+            <a id="focused-tab" href="/pages/blog_categories_list.html" class="button">../../../blog</a>
+            <a href="/pages/owner.html" class="button">~/owner</a>
+            <a href="/pages/auth.html" class="button">/dev/AUTH</a>
+        </nav>
+    </header>
+    <div class="page-container">
+        <div class="outside" id="outside">
+        <div id="notification-catch-all"></div>
+    </div>
+    <div id="global-container" class="card-container">
+        <div id="post-container"></div>
+        <div class=card>
+            <div class="title card-item">Add a Comment</div>
+            <form id="commentForm" class="comment-form card-item">
+                <label for="user_name">username:</label>
+                  <input type="text" id="user_name" name="user_name" value="anon" required>
+                <label for="body">body:</label>
+                  <textarea id="body" name="body" rows="5" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </div>
+        <div class="card-container">
+        <div id="comments-container"></div>
+            <div id="posts-container"></div>
+            <div class="card-floating">
+                <div id="comments-paginator"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="../scripts/blog_post_page.js"></script>
+    <script type="module" src="../scripts/blog_post_comments_list.js"></script>
+</body>
+</html>

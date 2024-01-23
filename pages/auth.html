@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/dev/auth</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="button">~/latest</a>
+            <a href="/pages/root.html" class="button">/root</a>
+            <a href="/pages/blog_categories_list.html" class="button">~/blog</a>
+            <a href="/pages/owner.html" class="button">~/owner</a>
+            <a href="/pages/auth.html" class="button">.</a>
+        </nav>
+    </header>
+    <div class="page-container">
+        <div class="outside">
+            <h1>Login</h1>
+            <p>system login</p>
+        </div>
+        <div class='card-container'>
+            <div class="card">
+                <form id="signInForm">
+                    <label for="signInUsername">Username:</label>
+                    <input type="text" id="signInUsername" name="signInUsername" required>
+        
+                    <label for="signInPassword">Password:</label>
+                    <input type="password" id="signInPassword" name="signInPassword" required>
+
+                    <button type="submit">Login</button>
+                </form>
+                <div id="notification-area-login"></div>
+            </div>
+        </div>
+        <div class="outside">
+        <div>
+        <div class="outside">
+            <h1>Create account</h1>
+            <p>Create new account</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <form id="signUpForm">
+                    <label for="signUpUsername">Username:</label>
+                    <input type="text" id="signUpUsername" name="signUpUsername" required>
+        
+                    <label for="signUpPassword">Password:</label>
+                    <input type="password" id="signUpPassword" name="signUpPassword" required>
+
+                    <label for="signUpCode">Code:</label>
+                    <input type="code" id="signUpCode" name="signUpCode" required>
+
+                    <button type="submit">Create</button>
+                </form>
+                <div id="notification-area-create-account"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../api/auth.js"></script>
+    <script type="module" src="../scripts/auth.js"></script>
+</body>
+</html>

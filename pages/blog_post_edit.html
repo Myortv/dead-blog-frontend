@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myortv/Edit_Post</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="button">~/latest</a>
+            <a href="/pages/root.html" class="button">/root</a>
+            <a href="/pages/blog_categories_list.html" class="button">~/blog</a>
+            <a href="/pages/owner.html" class="button">~/owner</a>
+            <a href="/pages/auth.html" class="button">/dev/AUTH</a>
+        </nav>
+    </header>
+
+    <div class="admin-container page-container">
+        <div class="outside">
+            <h1>Edit post</h1>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div id="updatePostForm" class="admin-form post-form">
+                <!--<form id="updatePostForm" class="admin-form post-form card-item">-->
+                    <label for="postTitle">Title:</label>
+                        <input type="text" id="postTitle" required>
+                    <label for="postCategory">Category:</label>
+                        <select id="postCategory" required></select>
+                    <label for="postCaption">Caption:</label>
+                        <textarea id="postCaption" rows="5" required></textarea>
+                    <label for="postBody">Body:</label>
+                        <textarea id="postBody" rows="30" required></textarea>
+                    <button id="postUpdateButton">Update Post</button>
+                    <div id="notification-catch-all"></div>
+                <!--</form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../scripts/blog_post_edit.js"></script>
+
+</body>
+</html>

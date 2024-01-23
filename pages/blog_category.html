@@ -1,0 +1,43 @@
+<!-- pages/blog_category.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="button">~/latest</a>
+            <a href="/pages/root.html" class="button">/root</a>
+            <a id="focused-tab" href="/pages/blog_categories_list.html" class="button">../../blog</a>
+            <a href="/pages/owner.html" class="button">~/owner</a>
+            <a href="/pages/auth.html" class="button">/dev/AUTH</a>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <div class="outside">
+            <div class="card-container">
+                <div id="category-hat"></div>
+            </div>
+
+            <div id="notification-catch-all"></div>
+            <div id="admin-create-post-button" class="simple-list"></div>
+        </div>
+        <div class="card-container">
+            <div id="posts-container" class="card-container"></div>
+            <div class="card-floating">
+                <div id="paginator"></div>
+            </div>
+        </div>
+
+        <script src="../scripts/main.js"></script>
+        <script type="module" src="../scripts/blog_category.js"></script>
+        <script type="module" src="../scripts/blog_post_list.js"></script>
+        <script type="module" src="/scripts/admin_create_new_post_button.js">
+    </div>
+</body>
+</html>
