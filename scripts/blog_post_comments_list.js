@@ -44,7 +44,7 @@ function makeShortComment(comment) {
     const body = document.createElement('div');
     body.classList.add('comment-body');
     body.classList.add('card-item');
-    body.innerHTML = comment.body;
+    body.textContent = comment.body;
 
     const created_at = document.createElement('div');
     created_at.classList.add('comment-time');
